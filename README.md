@@ -94,25 +94,42 @@ $ chronyc sources
 $ chronyc tracking
 ```
 
-
 ## Install and Configure on RHEL
 
+1.	First install chrony by running the command below:
 
+```
+$ yum -y install chrony
+```
 
+2. Then check the chrony status by running the command below. It will be inactive status because we freshly install.
 
+```
+$ systemctl status chronyd
+```
 
+3. Then we need to enable daemon upon boot, by using the following command. 
 
+```
+$ systemctl enable chronyd
+```
 
+4.	Next, we need to configure the NTP config file where it will locate at this location **/etc/chrony.conf** or **/etc/chrony/chrony.conf**.
 
+5.	Edit the chrony configuration file by running the following command.
+```
+$ vi chrony.conf
+```
+Need to configure NTP by replacing the server 0.rhel.pool.ntp.org iburst, server 1.rhel.pool.ntp.org iburst, server 2.rhel.pool.ntp.org iburst and server 3.rhel.pool.ntp.org iburst with the client NTP.
 
+6.Next, we need to check if the chrony synchronization status, by running the command below it will have the tracking option which will provide relevant information.
 
+```
+$ chronyc tracking
+```
 
+7.	To check the chrony sources, you can issue the following command.
 
-
-
-
-
-
-
-
-
+```
+$ chronyc sources
+```
