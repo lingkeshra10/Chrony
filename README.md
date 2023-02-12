@@ -64,33 +64,31 @@ $ sudo nano /etc/chrony/chrony.conf
 server 192.168.2.12
 ```
 
-11. Save and exit the file.
-
-12. Synchronize the servers.
+11. Save and exit the file. Synchronize the servers.
 
 ```
 $ sudo timedatectl set-ntp true
 ```
 
-13. Restart the Chrony service.
+12. Restart the Chrony service.
 
 ```
 $ sudo systemctl restart chronyd
 ```
 
-14. Check the list of clients added.
+13. Check the list of clients added.
 
 ```
 $ sudo chronyc clients
 ```
 
-15. Check the Chrony sources.
+14. Check the Chrony sources.
 
 ```
 $ chronyc sources
 ```
 
-16. Check the server chrony is tracking with its performance metrics.
+15. Check the server chrony is tracking with its performance metrics.
 
 ```
 $ chronyc tracking
