@@ -1,6 +1,6 @@
 # Chrony
 
-Chrony is a Network Time Protocol (NTP) client. An NTP server allows all devices on a network to synchronize their time. This article explains how to install and configure Chrony on RHEL or Ubuntu.
+Chrony is a Network Time Protocol (NTP) client. An NTP server allows all devices on a network to synchronize their time. This article explains how to install and configure Chrony on Ubuntu or RHEL.
 
 ## Install and Configure on Ubuntu
 
