@@ -120,7 +120,7 @@ $ systemctl enable chronyd
 ```
 $ vi chrony.conf
 ```
-Need to configure NTP by replacing the server 0.rhel.pool.ntp.org iburst, server 1.rhel.pool.ntp.org iburst, server 2.rhel.pool.ntp.org iburst and server 3.rhel.pool.ntp.org iburst with the client NTP.
+Need to configure NTP config by replacing the server or comments out these **0.rhel.pool.ntp.org iburst, server 1.rhel.pool.ntp.org iburst, server 2.rhel.pool.ntp.org iburst and server 3.rhel.pool.ntp.org iburst** with the client NTP.
 
 6.Next, we need to check if the chrony synchronization status, by running the command below it will have the tracking option which will provide relevant information.
 
